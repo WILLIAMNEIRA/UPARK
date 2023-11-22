@@ -1,0 +1,73 @@
+<auth-layout-page></auth-layout-page>
+<h1 class="linkInicio" routerLink="/auth/home">Inicio</h1>
+
+<h1 class="Principal">Registrar Vehiculo</h1>
+
+<form class="registro">
+  <h2>Registro</h2>
+  <div class="form-group">
+    <label for="placa">Placa:</label>
+    <input type="text" id="placa" name="placa" required>
+  </div>
+
+  <div class="form-group">
+    <label for="dia">Dia</label>
+    <input type="date" id="dia" name="dia" required>
+  </div>
+  <div class="form-group">
+    <label for="Hdesde">Hora desde:</label>
+    <input type="time" id="Hdesde" name="Hdesde" required>
+  </div>
+  <div class="form-group">
+    <label for="Hhasta">Hora Hasta:</label>
+    <input type="time" id="Hhasta" name="Hhasta" required>
+  </div>
+
+  <label for="tipoVehiculo">Parquedero:</label>
+  <select id="tipoVehiculo" name="tipoVehiculo" required>
+    <option value="" disabled selected>Selecciona el parqueadero</option>
+    <option value="Bienestar">Bienestar</option>
+    <option value="Casona">Casona</option>
+    <option value="Laboratorios">Laboratorios</option>
+    <option value="Bloque">Bloque Aulas</option>
+    <!-- Agrega más opciones según tus necesidades -->
+  </select>
+  <div class="form-group">
+    <label for="tipoVehiculo">Espacio:</label>
+    <select id="tipoVehiculo" name="tipoVehiculo" required>
+      <option value="" disabled selected>Seleccione su espacio</option>
+      <option value="Bienestar">1° Puesto</option>
+      <option value="Casona">2° Puesto</option>
+      <option value="Laboratorios">3° Puesto</option>
+      <option value="Bloque">4° Puesto</option>
+      <!-- Agrega más opciones según tus necesidades -->
+    </select>
+  </div>
+
+  <button type="submit">Registrar Vehículo</button>
+</form>
+
+<table class="tabla">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Descripción</th>
+      <th>Parqueadero</th>
+      <th>Puesto</th>
+      <th>Estado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Utiliza *ngFor para iterar sobre los datos y construir las filas de la tabla -->
+    <tr   *ngFor="let dato of datos" >
+      <td>{{ dato.id }}</td>
+      <td>{{ dato.nombre }}</td>
+      <td>{{ dato.descripcion }}</td>
+      <td>{{ dato.parqueadero }}</td>
+      <td>{{ dato.puesto }}</td>
+      <td>{{ dato.estado }}</td>
+
+    </tr>
+  </tbody>
+</table>

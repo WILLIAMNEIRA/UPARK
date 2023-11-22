@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(../src/assets/img/fondo.jpg) no-repeat center top;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.form-check-input{
+    background-color: red;
+  }
+  .form-check-input:checked{
+    background-color: rgb(6, 212, 6)
+  }

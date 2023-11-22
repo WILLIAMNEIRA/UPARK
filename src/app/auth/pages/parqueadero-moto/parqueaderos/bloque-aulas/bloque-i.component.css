@@ -1,0 +1,106 @@
+.container {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "layout imagen"
+    "layout imagen"
+    "layout imagen";
+}
+.Principal {
+  font-size: 30px;
+  color: #ffffff;
+  margin-left: 75%;
+  margin-top: -50px;
+  font-family: sans-serif;
+  text-align: center;
+  text-shadow: 1px 1px 2px black;
+}
+
+
+.layout {
+  grid-area: layout;
+   text-align: center;
+    color: white;
+    top: 40%;
+    left: 30%;
+    position: absolute;
+    transform: translate(-130%, -50%);
+    backdrop-filter: blur(50px);
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 70px 50px;
+    margin-top: 100px;
+    margin-left: 22%;
+    text-shadow: 1px 1px 2px black;
+}
+.layout2{
+  grid-area: layout;
+  text-align: center;
+   color: white;
+   top: 40%;
+   left: 45%;
+   height: 520px;
+   position: absolute;
+   transform: translate(-130%, -50%);
+   backdrop-filter: blur(50px);
+   box-sizing: border-box;
+   border-radius: 10px;
+   padding: 70px 50px;
+   margin-top: 100px;
+   margin-left: 22%;
+   text-shadow: 1px 1px 2px black;
+}
+
+.imagen {
+  grid-area: imagen;
+  margin-top: -90px;
+  margin-left: 25%;
+  transform: rotate(90deg);
+    position: absolute;
+}
+
+
+.form-check-input{
+  width: 40px;
+  height: 25px;
+ 
+}
+
+.ejemplo{
+  margin-top: 90px;
+}
+.ocupado{
+  margin-left: 170px;
+  margin-top: -30px;
+}
+
+
+.form-check-label{
+  margin-left: 1rem;
+  color: #ffffff;
+  font-size: 20px;
+  text-shadow: 1px 1px 2px black;
+
+}
+button {
+  margin-top: 1px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  font-size: 19px;
+  background-color: red;
+  box-shadow: 1px 1px 2px black;
+  color: #fff;
+  height: 4.5rem;
+  width: 200px;
+  margin-left: 230%;
+  margin-top: 8rem;
+}
+button:hover{
+  background-color: #fff;
+  color: red;
+  
+}

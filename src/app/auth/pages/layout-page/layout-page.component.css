@@ -1,0 +1,16 @@
+
+
+.principal{
+    margin: -1rem;
+    width: 103%;
+    height: 4rem;
+    background-color: red;
+}
+
+.imgBanner{
+    width: 250px;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    background-color: #ffffff;
+    box-shadow: 2px 0.1px 6px black;
+}

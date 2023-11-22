@@ -1,0 +1,88 @@
+.login-container {
+    text-align: center;
+    width: 360px;
+    height: 470px;
+    backdrop-filter: blur(50px);
+    color: white;
+    top: 55%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border-radius: 30px;
+    padding: 70px 50px;
+    box-shadow: 1px 1px 2px black;
+}
+
+button {
+    margin-left: 80px;
+    margin-top: 0.3rem;
+}
+
+a {
+    color: #ffff;
+    text-decoration: none;
+    margin-left: -13px;
+}
+
+a:hover {
+    text-decoration: underline
+}
+
+
+h1 {
+    margin-left: 13px;
+    margin-bottom: 10px;
+    margin-top: 3px;
+    text-shadow: 1px 1px 2px black;
+    color: white;
+}
+
+.imgUser {
+    width: 125px;
+    height: 125px;
+    margin-top: -3rem;
+}
+
+/* Estilos del formulario */
+.form-group {
+    margin-bottom: 10px;
+    text-align: left;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: red;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 1px 1px 2px black;
+}
+
+button:hover {
+    background-color: rgb(210, 20, 20);
+    color: #fff;
+}
+
+
+.usuario,
+.password {
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}

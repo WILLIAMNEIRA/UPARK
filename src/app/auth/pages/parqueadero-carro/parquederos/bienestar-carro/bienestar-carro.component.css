@@ -1,0 +1,90 @@
+.container {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "layout imagen"
+    "layout imagen"
+    "layout imagen";
+}
+
+.layout {
+  grid-area: layout;
+   text-align: center;
+    width: 400px;
+    height: 400px;
+    backdrop-filter: blur(50px);
+    color: white;
+    top: 55%;
+    left: 70%;
+    position: absolute;
+    transform: translate(-130%, -50%);
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 70px 50px;
+}
+.Principal {
+    font-size: 30px;
+    color: #ffffff;
+    margin-left: 75%;
+    margin-top: -50px;
+    font-family: sans-serif;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+}
+.ejemplo{
+  margin-top: 170px;
+  margin-left: 5%;
+  
+}
+.ocupado{
+  margin-left: 170px;
+  margin-top: -35px;
+}
+
+.imagen {
+  grid-area: imagen;
+  margin-top: 80px;
+  margin-left: 18%;
+  position: absolute;
+}
+
+
+.form-check-input{
+  width: 40px;
+  height: 25px;
+  margin-top: 0.5rem;
+  
+}
+.form-check-label{
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  color: #ffffff;
+  font-size: 20px;
+  text-shadow: 1px 1px 2px black;
+}
+img{
+  width:750px ;
+}
+
+button {
+  margin-top: 1px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  font-size: 19px;
+  background-color: red;
+  box-shadow: 1px 1px 2px black;
+  color: #fff;
+  height: 4.5rem;
+  width: 200px;
+  margin-left: 230%;
+  margin-top: 8rem;
+}
+button:hover{
+  background-color: #fff;
+  color: red;
+  
+}

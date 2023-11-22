@@ -1,0 +1,10 @@
+<auth-layout-page></auth-layout-page>
+<h1 class="linkInicio" routerLink="/auth/home">Inicio</h1>
+<h1 class="Principal">Parqueadero Automoviles</h1>
+<div class="container">
+  <div class="carro">
+    <mat-nav-list>
+      <button routerLinkActive="active" routerLink="{{nav.route}}" *ngFor="let nav of sidenav">{{nav.name}}</button>
+    </mat-nav-list>
+  </div>
+</div>

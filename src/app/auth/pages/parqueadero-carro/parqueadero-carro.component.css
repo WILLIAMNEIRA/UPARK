@@ -1,0 +1,92 @@
+.container {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "carro parqueaderos"
+        "carro parqueaderos"
+        "carro parqueaderos";
+}
+
+.carro {
+    grid-area: moto;
+}
+
+.Principal {
+    font-size: 30px;
+    color: #ffffff;
+    margin-left: 75%;
+    margin-top: -50px;
+    font-family: sans-serif;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+}
+
+.Principal {
+    font-size: 30px;
+    color: #ffffff;
+    margin-left: 75%;
+    margin-top: -50px;
+    font-family: sans-serif;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+}
+
+button {
+    margin: 10px;
+    margin-top: 1px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    font-size: 19px;
+    padding-left: 1rem;
+    background-color: red;
+    color: #fff;
+    height: 3rem;
+    width: 150px;
+}
+
+button:hover {
+    background-color: #fff;
+    color: red;
+}
+
+
+.carro {
+    grid-area: moto;
+    text-align: center;
+    width: 300px;
+    height: 400px;
+    backdrop-filter: blur(50px);
+    color: white;
+    top: 57%;
+    left: 27%;
+    position: absolute;
+    transform: translate(-130%, -50%);
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 70px 50px;
+}
+
+.parqueaderos {
+    margin-left: 50%;
+    margin-top: 6rem;
+    width: 100px;
+}
+
+.linkInicio {
+    font-size: 22px;
+    color: #ffffff;
+    margin-left: -50%;
+    margin-top: -35px;
+    font-family: sans-serif;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+}
+
+.linkInicio:hover {
+    color: #ece8e8;
+
+}

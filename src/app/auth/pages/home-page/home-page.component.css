@@ -1,0 +1,121 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "carro moto"
+        "carro moto"
+        "carro moto"
+}
+
+.Principal {
+    font-size: 22px;
+    color: #ffffff;
+    margin-left: -51%;
+    margin-top: -35px;
+    font-family: sans-serif;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+}
+.Salir{
+    font-size: 25px;
+    color: #ffffff;
+    margin-left: 90%;
+    cursor: pointer;
+    margin-top: -44px;
+    font-family: sans-serif;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+}
+.Salir:hover{
+    color: #eeecec;
+}
+
+.moto {
+    grid-area: moto;
+    text-align: center;
+    width: 400px;
+    height: 600px;
+    backdrop-filter: blur(50px);
+    color: white;
+    top: 55%;
+    left: 35%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border-radius: 30px;
+    padding: 70px 50px;
+    box-shadow: 1px 1px 2px black;
+    background-image: url("https://auteco.vteximg.com.br/arquivos/ids/304573/z1000-r-gris-verde-2023-foto1.png?v=638247743600770000");
+    background-position: -46px;
+    background-repeat: no-repeat;
+    background-size: 122%;
+}
+
+.carro {
+    grid-area: carro;
+    text-align: center;
+    width: 400px;
+    height: 600px;
+    backdrop-filter: blur(50px);
+    color: white;
+    top: 55%;
+    left: 65%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border-radius: 30px;
+    padding: 70px 50px;
+    box-shadow: 1px 1px 2px black;
+    background-image: url("https://www.mercedes-benz.com.co/mercedes/site/artic/20230718/imag/foto_0000009820230718122732/34.png");
+    background-position: -211px;
+    background-repeat: no-repeat;
+}
+
+.titulo {
+    color: white;
+    font-size: 30px;
+    margin-top: -30px;
+    font-family: sans-serif;
+    text-shadow: 1px 1px 2px black;
+
+}
+
+button {
+    margin-left: 13px;
+    margin-top: 26rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    padding-left: 1rem;
+
+}
+
+.Parqueadero {
+    background-color: red;
+    color: #fff;
+}
+.Parqueadero:hover {
+ background-color: rgb(218, 12, 12);
+ text-decoration:underline
+
+}
+
+.Registro {
+    background-color: rgb(247, 247, 247);
+    color: red;
+}
+.Registro:hover{
+    text-decoration:underline
+}
+
+.moto:hover {
+    box-shadow: 10px 10px 10px rgb(124, 118, 118);
+}
+
+.carro:hover {
+    box-shadow: 10px 10px 10px rgb(124, 118, 118);
+}

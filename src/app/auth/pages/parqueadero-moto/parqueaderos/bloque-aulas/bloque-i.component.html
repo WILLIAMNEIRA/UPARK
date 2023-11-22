@@ -1,0 +1,34 @@
+<parqueadero-moto></parqueadero-moto>
+<h1 class="Principal">Parqueadero Motocicletas</h1>
+<div class="container">
+    <div class="contenido">
+        <div class="layout">
+            <div class="form-check form-switch" *ngFor="let puesto of puestos">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked"
+                    [checked]="puesto.active">
+                <label class="form-check-label" for="flexSwitchCheckChecked">{{puesto.name}}</label>
+            </div>
+        </div>
+        <div class="layout2">
+            <div class="form-check form-switch" *ngFor="let puesto of puestosList ">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked"
+                    [checked]="puesto.active">
+                <label class="form-check-label" for="flexSwitchCheckChecked">{{puesto.name}}</label>
+            </div>
+        </div>
+    </div>
+    <div class="ejemplo">
+        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" [checked]="true"
+            disabled>
+        <label class="form-check-label" for="flexSwitchCheckChecked" disabled>Disponible</label>
+        <div class="ocupado">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" [checked]="false"
+                disabled>
+            <label class="form-check-label" for="flexSwitchCheckChecked">Ocupado</label>
+        </div>
+    </div>
+
+    <div class="mapa">
+        <button>Ver Parqueadero</button>
+    </div>
+</div>

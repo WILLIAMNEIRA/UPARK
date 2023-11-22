@@ -1,0 +1,13 @@
+<div>
+    <mat-dialog-actions>
+        <button mat-button mat-dialog-close><mat-icon>clear</mat-icon></button>
+    </mat-dialog-actions>
+    <h2 mat-dialog-title>Espacios Disponibles</h2>
+    <mat-dialog-content>
+        <div class="form-check form-switch" *ngFor="let puesto of puestos">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked"
+                [checked]="puesto.active">
+            <label class="form-check-label" for="flexSwitchCheckChecked">{{puesto.name}}</label>
+        </div>
+    </mat-dialog-content>
+</div>
